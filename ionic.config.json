@@ -1,0 +1,7 @@
+{
+  "name": "smartwatch-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
