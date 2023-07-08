@@ -1,0 +1,71 @@
+<!---<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>  ---->
+
+
+<!----<ion-card>
+<ion-card-content>
+  <ion-item>
+    <ion-input label="Heart rate" type="number" placeholder="bpm" value="100bpm"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Blood pressure" type="number" placeholder="mmHg"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Oxygen level" type="number" placeholder="%"></ion-input>
+  </ion-item>
+</ion-card-content>
+</ion-card>       temporary disable-->
+<div class="dt">
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+  
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+  
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title>Vital Signs</ion-card-title>
+      <ion-card-subtitle>Thresholds</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="/assets/heartrate.png" />
+          </ion-thumbnail>
+          <ion-item>
+            <ion-input label="Heart rate" type="number" placeholder="bpm" value="100bpm"></ion-input>
+          </ion-item>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="/assets/bp.png" />
+          </ion-thumbnail>
+          <ion-item>
+            <ion-input label="Blood pressure" type="number" placeholder="mmHg"></ion-input>
+          </ion-item>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="/assets/SpO2.png" />
+          </ion-thumbnail>
+          <ion-item>
+            <ion-input label="Oxygen level" type="number" placeholder="%"></ion-input>
+          </ion-item>
+        </ion-item>
+  
+      
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  </div>
